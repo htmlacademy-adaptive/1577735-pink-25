@@ -2,12 +2,14 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>HTML Academy: Конкурс</title>
+    <title>HTML Academy: Пинк</title>
   </head>
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="img/logotype-mobile.svg" width="147" height="40" alt="PINK">
+        <svg class="logo-icon" width="74" height="23" role="img" focusable="false">
+          <use href="img/sprite.svg#logotype-mobile"></use>
+        </svg>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,7 +18,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>
+              <a href="index.html">
                 Главная
               </a>
             </li>
@@ -41,8 +43,10 @@
     </header>
     <main class="main-container">
       <h1 class="visually-hidden">Прими участие в конкурсе</h1>
-      <h2 class="main-container__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
-      <div class="form-container">
+      <section class="first-screen">
+        <h2 class="first-screen__title">Конкурс на самое безбашенное путешествие с Пинк</h2>
+      </section>
+      <section class="form-container">
         <h3 class="form-container__title">Поделитесь своей историей и получите шанс выиграть ценный приз — 1000 миль на вашу бонусную карту!</h3>
         <form class="registry" action="https://echo.htmlacademy.ru" method="post">
           <label class="registry__field">
@@ -139,13 +143,15 @@
         </form>
         <button class="registry__button">Отправить форму</button>
         <p class="registry__legend">* — обязательные поля</p>
-      </div>
+      </section>
     </main>
     <footer class="main-footer">
       <div class="main-footer__wrapper">
         <div class="main-footer__logotype">
           <a class="main-footer__logo" href="#">
-            <img src="img/logotype-footer.svg" width="145" height="40" alt="PINK footer">
+            <svg class="main-footer__logo-icon" width="145" height="40" role="img" focusable="false">
+              <use href="img/sprite.svg#logotype-footer"></use>
+            </svg>
           </a>
         </div>
         <div class="main-footer__social social">
@@ -164,7 +170,13 @@
         </div>
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="27" height="34" aria-labelledby="html-academy" role="img"
+              focusable="false">
+              <title id="html-academy">HTML Academy</title>
+              <use href="img/sprite.svg#html-academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
