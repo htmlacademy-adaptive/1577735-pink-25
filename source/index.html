@@ -7,7 +7,9 @@
   <body class="page__body">
     <header class="main-header">
       <a class="main-header__logo">
-        <img src="img/logotype-mobile.svg" width="147" height="40" alt="PINK">
+        <svg class="logo-icon" width="74" height="23" role="img" focusable="false">
+          <use href="img/sprite.svg#logotype-mobile"></use>
+        </svg>
       </a>
       <nav class="main-nav">
         <button class="main-nav__toggle" type="button">
@@ -16,7 +18,7 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a>
+              <a href="#">
                 Главная
               </a>
             </li>
@@ -48,12 +50,18 @@
             <a class="download__button">Скачать приложение</a>
             <ul class="download__list">
               <li class="download__item">
-                <img class="apple" src="img/apple-logo.svg" width="47" height="56" alt="для Apple">
+                <svg class="download__item-apple" width="47" height="56" role="img" focusable="false">
+                  <use href="img/sprite.svg#appple"></use>
+                </svg>
               </li>
               <li class="download__item">
-                <img class="android" src="img/android-logo.svg" width="47" height="56" alt="для Android">
+                <svg class="android" width="43" height="47" role="img" focusable="false">
+                  <use href="img/sprite.svg#android"></use>
+                </svg>
               <li class="download__item">
-                <img class="windows" src="img/microsoft-logo.svg" width="47" height="56" alt="для Windows">
+                <svg class="windows" width="47" height="56" role="img" focusable="false">
+                  <use href="img/sprite.svg#windows"></use>
+                </svg>
               </li>
             </ul>
             <p class="reach">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
@@ -131,21 +139,57 @@
             </tr>
             <tr>
               <td class="price__option">Розовый фильтр</td>
-              <td class="price__option price__option--attend"></td>
-              <td class="price__option price__option--attend"></td>
-              <td class="price__option price__option--attend"></td>
+              <td class="price__option price__option--attend">
+                <svg class="attend" wigth="31" height="21" role="img" focusable="false">
+                  <use href="img/sprite.svg#yes"></use>
+                </svg>
+              </td>
+              <td class="price__option price__option--attend">
+                <svg class="attend" wigth="31" height="21" role="img" focusable="false">
+                  <use href="img/sprite.svg#yes"></use>
+                </svg>
+              </td>
+              <td class="price__option price__option--attend">
+                <svg class="attend" wigth="31" height="21" role="img" focusable="false">
+                  <use href="img/sprite.svg#yes"></use>
+                </svg>
+              </td>
             </tr>
             <tr>
               <td class="option">Смайлики</td>
-              <td class="price__option price__option--absent"></td>
-              <td class="price__option price__option--attend"></td>
-              <td class="price__option price__option--attend"></td>
+              <td class="price__option price__option--absent">
+                <svg class="absent" width="27" height="27" role="img" focusable="false">
+                  <use href="img/sprite.svg#no"></use>
+                </svg>
+              </td>
+              <td class="price__option price__option--attend">
+                <svg class="attend" wigth="31" height="21" role="img" focusable="false">
+                  <use href="img/sprite.svg#yes"></use>
+                </svg>
+              </td>
+              <td class="price__option price__option--attend">
+                <svg class="attend" wigth="31" height="21" role="img" focusable="false">
+                  <use href="img/sprite.svg#yes"></use>
+                </svg>
+              </td>
             </tr>
             <tr>
               <td class="option">Комментарии</td>
-              <td class="price__option price__option--absent"></td>
-              <td class="price__option price__option--absent"></td>
-              <td class="price__option price__option--attend"></td>
+              <td class="price__option price__option--absent">
+                <svg class="absent" width="27" height="27" role="img" focusable="false">
+                  <use href="img/sprite.svg#no"></use>
+                </svg>
+              </td>
+              <td class="price__option price__option--absent">
+                <svg class="absent" width="27" height="27" role="img" focusable="false">
+                  <use href="img/sprite.svg#no"></use>
+                </svg>
+              </td>
+              <td class="price__option price__option--attend">
+                <svg class="attend" wigth="31" height="21" role="img" focusable="false">
+                  <use href="img/sprite.svg#yes"></use>
+                </svg>
+              </td>
             </tr>
           </table>
           <p class="price__toggles">
@@ -177,7 +221,9 @@
       <div class="main-footer__wrapper">
         <div class="main-footer__logotype">
           <a class="main-footer__logo" href="#">
-            <img src="img/logotype-footer.svg" width="145" height="40" alt="PINK footer">
+            <svg class="main-footer__logo-icon" width="145" height="40" role="img" focusable="false">
+              <use href="img/sprite.svg#logotype-footer"></use>
+            </svg>
           </a>
         </div>
         <div class="main-footer__social social">
@@ -196,7 +242,12 @@
         </div>
         <div class="main-footer__copyright copyright">
           <b class="copyright__text">Разработано:</b>
-          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">HTML Academy</a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="copyright__link-icon" width="27" height="34" aria-labelledby="html-academy" role="img" focusable="false">
+              <title id="html-academy">HTML Academy</title>
+              <use href="img/sprite.svg#html-academy"></use>
+            </svg>
+          </a>
         </div>
       </div>
     </footer>
