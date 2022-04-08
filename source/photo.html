@@ -19,22 +19,22 @@
         <div class="main-nav__wrapper">
           <ul class="main-nav__list site-list">
             <li class="site-list__item">
-              <a href="index.html">
+              <a class="site-list__link" href="index.html">
                 Главная
               </a>
             </li>
             <li class="site-list__item">
-              <a href="photo.html">
+              <a class="site-list__link" href="photo.html">
                 Фотографии
               </a>
             </li>
             <li class="site-list__item site-list__item--active">
-              <a href="form.html">
+              <a class="site-list__link" href="form.html">
                 Конкурс
               </a>
             </li>
             <li class="site-list__item">
-              <a href="#">
+              <a class="site-list__link" href="#">
                 HTML Academy
               </a>
             </li>
@@ -50,7 +50,7 @@
         <h3 class="users-photo__title">Взгляните на фотографии, которые выкладывают пользователи! Видите, как не хватает ваших?</h3>
         <div class="users-photo__panorama panorama">
           <figure class="panorama__image">
-            <img src="img/panorama.png" width="320" height="137" alt="Вид с высоты">
+            <img class="panorama__image-pic" src="img/panorama.png" width="320" height="137" alt="Вид с высоты">
             <figcaption class="panorama__filling">
               <span class="panorama__title">Панорама дня</span>
               <p class="panorama__autor">Анна
@@ -65,7 +65,7 @@
         </div>
         <div class="users-photo__photo photo">
           <figure class="photo__image">
-            <img src="img/photo-1.png" width="280" height="180" alt="Фотосъёмка автомобиля">
+            <img class="photo__image-pic" src="img/photo-1.jpg" width="280" height="180" alt="Фотосъёмка автомобиля">
             <figcaption class="photo__filling">
               <p class="photo__autor">Левон
                 <span class="photo__post-time">(5 часов назад)</span>
@@ -79,7 +79,7 @@
         </div>
         <div class="users-photo__photo photo">
           <figure class="photo__image">
-            <img src="img/photo-1.png" width="280" height="180" alt="Фотосъёмка автомобиля">
+            <img class="photo__image-pic" src="img/photo-2.jpg" width="280" height="180" alt="Барабанная установка">
             <figcaption class="photo__filling">
               <p class="photo__autor">Антон
                 <span class="photo__post-time">(12 часов назад)</span>
@@ -93,7 +93,7 @@
         </div>
         <div class="users-photo__photo photo">
           <figure class="photo__image">
-            <img src="img/photo-1.png" width="280" height="180" alt="Фотосъёмка автомобиля">
+            <img class="photo__image-pic" src="img/photo-3.jpg" width="280" height="180" alt="Вид на небо через решётку">
             <figcaption class="photo__filling">
               <p class="photo__autor">Борис
                 <span class="photo__post-time">(20 часов назад)</span>
@@ -107,7 +107,7 @@
         </div>
         <div class="users-photo__photo photo">
           <figure class="photo__image">
-            <img src="img/photo-1.png" width="280" height="180" alt="Фотосъёмка автомобиля">
+            <img class="photo__image-pic" src="img/photo-4.jpg" width="280" height="180" alt="Распродажа арбузов и дынь">
             <figcaption class="photo__filling">
               <p class="photo__autor">Сергей
                 <span class="photo__post-time">(25 часов назад)</span>
@@ -121,7 +121,7 @@
         </div>
         <div class="users-photo__photo photo">
           <figure class="photo__image">
-            <img src="img/photo-1.png" width="280" height="180" alt="Фотосъёмка автомобиля">
+            <img class="photo__image-pic" src="img/photo-5.jpg" width="280" height="180" alt="Сидя на обрыве">
             <figcaption class="photo__filling">
               <p class="photo__autor">Максим
                 <span class="photo__post-time">(40 часов назад)</span>
@@ -135,7 +135,7 @@
         </div>
         <div class="users-photo__photo photo">
           <figure class="photo__image">
-            <img src="img/photo-1.png" width="280" height="180" alt="Фотосъёмка автомобиля">
+            <img class="photo__image-pic" src="img/photo-6.jpg" width="280" height="180" alt="Крыло самолёта">
             <figcaption class="photo__filling">
               <p class="photo__autor">Надежда
                 <span class="photo__post-time">(45 часов назад)</span>
@@ -151,18 +151,18 @@
       <section class="upload">
         <h3 class="upload__title">Затмите их всех! Выкладывайте все, что накопилось в телефоне!</h3>
         <figure class="photo-editor">
-          <img src="img/photo-7.png" width="280" height="374" alt="Зимня дорога">
+          <img class="photo-editor__pic" src="img/photo-7.png" width="280" height="374" alt="Зимня дорога">
           <figcaption class="photo-editor__button">
             <button class="photo-editor__button-cut photo-editor__button-cut--active"></button>
-              <label class="visually-hidden">Область отреза
+              <label class="photo-editor__button-cut-range">Область отреза
                 <input type="range" name="photo-editor__button-cut" min="0" max="100" value="90">
               </label>
             <button class="photo-editor__button-fill photo-editor__button-fill--active"></button>
-              <label class="visually-hidden">Заливка
+              <label class="photo-editor__button-fill-range">Заливка
                 <input type="range" name="photo-editor__button-fill" min="0" max="100" value="10">
               </label>
             <button class="photo-editor__button-contrast photo-editor__button-contrast--active"></button>
-              <label class="visually-hidden">Контраст
+              <label class="photo-editor__button-contrast-range">Контраст
                 <input type="range" name="photo-editor__button-contrast" min="0" max="100" value="50">
               </label>
             <button class="photo-editor__button-send">Запостить</button>
