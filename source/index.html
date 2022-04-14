@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>HTML Academy: Пинк</title>
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -47,29 +48,26 @@
       <section class="first-screen">
         <div class="first-screen__wrapper">
           <h2 class="first-screen__title">Взгляните на жизнь иначе!</h2>
-          <div class="first-screen__phone-screen"></div>
-        </div>
-      </section>
-      <section class="download">
-        <div class="download__wrapper">
-          <a class="download__button" href="#">Скачать приложение</a>
-          <ul class="download__list">
-            <li class="download__item">
-              <svg class="download__item-apple" width="47" height="56" role="img" focusable="false">
-                <use href="img/sprite.svg#apple"></use>
-              </svg>
-            </li>
-            <li class="download__item">
-              <svg class="android" width="43" height="47" role="img" focusable="false">
-                <use href="img/sprite.svg#android"></use>
-              </svg>
-            <li class="download__item">
-              <svg class="windows" width="47" height="56" role="img" focusable="false">
-                <use href="img/sprite.svg#windows"></use>
-              </svg>
-            </li>
-          </ul>
-          <p class="download__reach">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          <div class="download__wrapper">
+            <a class="download__button" href="#">Скачать приложение</a>
+            <ul class="download__list">
+              <li class="download__item">
+                <svg class="download__item-apple" width="47" height="56" role="img" focusable="false">
+                  <use href="img/sprite.svg#apple"></use>
+                </svg>
+              </li>
+              <li class="download__item">
+                <svg class="android" width="43" height="47" role="img" focusable="false">
+                  <use href="img/sprite.svg#android"></use>
+                </svg>
+              <li class="download__item">
+                <svg class="windows" width="47" height="56" role="img" focusable="false">
+                  <use href="img/sprite.svg#windows"></use>
+                </svg>
+              </li>
+            </ul>
+            <p class="download__reach">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+          </div>
         </div>
       </section>
       <section class="advantages">
@@ -111,7 +109,7 @@
               <div class="reviews__author-info">
                 <cite class="reviews__author-name">Николай Петров</cite>
                 <p class="reviews__author-legend">25 лет, водитель трамвая</p>
-                <p class="reviews__text">Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!</p>
+                <p class="reviews__text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
               </div>
             </blockquote>
             <button class="reviews__prev" type="button">Предыдущий отзыв</button>
@@ -207,13 +205,13 @@
         <h2 class="contacts__title">Остались вопросы? Свяжитесь с нами!</h2>
         <ul class="contacts__find">
           <li class="contacts__description">Звоните:
-            <a class="call" href="tel:+78125556666">+7 (812) 555-66-66</a>
+            <p class="contacts__description-wrapper"><a class="call" href="tel:+78125556666">+7 (812) 555-66-66</a></p>
+          </li>
+          <li class="contacts__description">Пишите:
+            <p class="contacts__description-wrapper"><a class="email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a></p>
           </li>
           <li class="contacts__description">Приезжайте в гости:
             <p class="address">ул. Большая Конюшенная, 19/8</p>
-          </li>
-          <li class="contacts__description">Пишите:
-            <a class="email" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </li>
         </ul>
         <div class="map">

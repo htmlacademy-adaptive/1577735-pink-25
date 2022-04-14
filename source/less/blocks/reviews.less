@@ -1,8 +1,31 @@
+.reviews {
+  background-color: #ffffff;
+}
+
+.reviews__item {
+  margin: 0;
+}
+
+.reviews__author-info {
+  display: flex;
+  flex-direction: column;
+}
+
 .reviews__author-name {
   font-weight: 700;
   font-size: 18px;
   line-height: 30px;
   color: #000000;
+}
+
+@media (min-width: @tablet-width) {
+  .reviews__author-name {
+    order: 2;
+  }
+
+  .reviews__author-legend {
+    order: 3;
+  }
 }
 
 .reviews__author-legend {
@@ -15,4 +38,8 @@
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+}
+
+.reviews__toggles {
+  margin: 0;
 }

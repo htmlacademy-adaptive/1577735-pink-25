@@ -1,8 +1,13 @@
+.effect {
+  display: none;
+}
+
 .effect__title {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
   color: #000000;
+  margin: 0;
 }
 
 
@@ -17,4 +22,16 @@
   font-size: 14px;
   line-height: 24px;
   color: #d22856;
+}
+
+@media (min-width: @tablet-width) {
+  .effect {
+    display: block;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .effect {
+    background-color: #f2f2f2;
+  }
 }
