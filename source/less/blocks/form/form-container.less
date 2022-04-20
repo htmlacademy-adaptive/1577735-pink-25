@@ -1,3 +1,9 @@
+.form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
 .form-container__title {
   font-weight: 400;
   font-size: 14px;
@@ -23,4 +29,27 @@
 
 .form-container__legend-star {
   color: #d22856;
+}
+
+.form-container__desktop-only {
+  display: none;
+}
+
+@media (min-width: @tablet-width) {
+  .form-container__footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .form-container__desktop-only {
+    display: block;
+  }
+
+  .form-container__legend {
+    display: flex;
+    flex-direction: row;
+  }
 }

@@ -1,4 +1,4 @@
-.achievement {
+.achievement__field {
   border: none;
 }
 
@@ -20,4 +20,17 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .achievement__field {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .achievement {
+    grid-column: 1/-1;
+  }
 }

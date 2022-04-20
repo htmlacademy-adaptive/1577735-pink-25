@@ -1,4 +1,4 @@
-.comment {
+.comment__field {
   border: none;
 }
 
@@ -14,4 +14,30 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+
+@media (min-width: @tablet-width) {
+  .comment__field {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+
+  .comment__description {
+    width: 496px;
+    margin: 47px 60px 53px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .comment {
+    grid-column: 1/-1;
+  }
+
+  .comment__description {
+    width: 816px;
+    margin: 44px 60px;
+  }
 }

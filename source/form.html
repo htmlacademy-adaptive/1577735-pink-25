@@ -53,15 +53,15 @@
           <ul class="registry__list">
             <li class="registry__item">
               <label class="registry__field">
-                <span class="registry__field-label">Фамилия:</span>
+                <p class="registry__field-label">Фамилия:</p>
                 <input class="registry__field-control registry__input" type="text" name="family" value="Укажите фамилию*" required>
               </label>
               <label class="registry__field">
-                <span class="registry__field-label">Имя:</span>
+                <p class="registry__field-label">Имя:</p>
                 <input class="registry__field-control registry__input" type="text" name="name" value="Введите ваше имя*" required>
               </label>
               <label class="registry__field">
-                <span class="registry__field-label">Отчество:</span>
+                <p class="registry__field-label">Отчество:</p>
                 <input class="registry__field-control registry__input" type="text" name="patronymic" value="Ну и отчество тоже">
               </label>
             </li>
@@ -110,13 +110,13 @@
             </li>
             <li class="registry__item feedback">
               <fieldset class="feedback__field">
-                <legend class="visually-hidden">Контактная информация</legend>
-                <label class="feedback__field">
-                  <span class="feedback__field-label">Номер телефона:</span>
+                <legend class="feedback__field-name">Контактная информация</legend>
+                <label class="feedback__field-phone">
+                  <p class="feedback__field-label">Номер телефона:</p>
                   <input class="feedback__field-control input" type="text" name="phone" value="Номер, пожалуйста">
                 </label>
-                <label class="feedback__field">
-                  <span class="feedback__field-label">Адрес почты:</span>
+                <label class="feedback__field-email">
+                  <p class="feedback__field-label">Адрес почты:</p>
                   <input class="feedback__field-control input" type="email" name="email" value="Введите почту*" required>
                 </label>
               </fieldset>
@@ -146,16 +146,18 @@
                 </ul>
               </fieldset>
             </li>
-            <li class="registry__item">
-              <fieldset class="comment">
+            <li class="registry__item comment">
+              <fieldset class="comment__field">
                 <legend class="comment__title">Опишите свои эмоции</legend>
                 <textarea class="comment__description" rows="7">Можно прям в красках, не стесняясь в выражениях</textarea>
               </fieldset>
             </li>
           </ul>
         </form>
-        <button class="form-container__button">Отправить форму</button>
-        <p class="form-container__legend"><span class="form-container__legend-star">*</span> — обязательные поля</p>
+        <div class="form-container__footer">
+          <button class="form-container__button">Отправить форму</button>
+          <p class="form-container__legend"><span class="form-container__legend-star">*</span> — обязательные&nbsp;<span class="form-container__desktop-only">для заполнения</span>&nbsp;поля</p>
+        </div>
       </section>
     </main>
     <footer class="main-footer">
