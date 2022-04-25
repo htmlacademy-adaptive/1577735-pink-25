@@ -1,4 +1,4 @@
-.application {
+.application__field {
   border: none;
 }
 
@@ -20,4 +20,22 @@
   font-weight: 400;
   font-size: 18px;
   line-height: 30px;
+}
+
+@media (min-width: @tablet-width) {
+  .application__field {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+
+  .application {
+    grid-row: 2/3;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .application {
+    grid-column: 2/3;
+    grid-row: 1/2;
+  }
 }

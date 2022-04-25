@@ -1,5 +1,36 @@
+.users-photo__wrapper {
+  margin: 0 auto;
+  padding: 0 20px;
+  display: grid;
+  row-gap: 20px;
+}
+
 .users-photo__title {
   font-weight: 400;
   font-size: 14px;
   line-height: 30px;
+  width: 280px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+@media (min-width: @tablet-width) {
+  .users-photo__title {
+    width: 620px;
+    text-align: center;
+  }
+
+  .users-photo__wrapper {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .users-photo__wrapper {
+    margin: 0 130px;
+    padding: 0;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 54px 20px;
+  }
 }

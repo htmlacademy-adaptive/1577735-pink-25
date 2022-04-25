@@ -1,5 +1,9 @@
-.feedback {
+.feedback__field {
   border: none;
+}
+
+.feedback__field-name {
+  display: none;
 }
 
 .feedback__field-label {
@@ -8,4 +12,56 @@
   line-height: 30px;
   color: #d22856;
   text-transform: uppercase;
+}
+
+.feedback__field-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645;
+  border: 2px solid #e5e5e5;
+  border-radius: 1px;
+}
+
+@media (min-width: @tablet-width) {
+  .feedback__field {
+    border: 2px solid #e5e5e5;
+    border-radius: 1px;
+  }
+
+  .feedback__field-phone,
+  .feedback__field-email {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .feedback__field-label {
+    order: 2;
+  }
+
+  .feedback__field-name {
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 30px;
+    color: #d22856;
+    text-transform: uppercase;
+  }
+
+  .feedback {
+    grid-row: 3/4;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .feedback {
+    grid-row: 2/3;
+    grid-column: 1/-1;
+  }
+
+  .feedback__field {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 74px;
+  }
 }

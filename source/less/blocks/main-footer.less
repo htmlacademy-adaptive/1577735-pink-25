@@ -4,18 +4,22 @@
 
 .main-footer__wrapper {
   display: flex;
+  flex-direction: column;
   flex-wrap: wrap;
   justify-content: space-between;
+  align-items: center;
 }
 
 @media (min-width: @tablet-width) {
   .main-footer__wrapper {
     width: 620px;
+    flex-direction: row;
   }
 }
 
 @media (min-width: @desktop-width) {
   .main-footer__wrapper {
+    margin: 0 130px;
     width: 940px;
   }
 }
